@@ -4,9 +4,10 @@ import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { IssueListComponent } from './issue-list/issue-list.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, IssueListComponent],
   imports: [
     BrowserModule,
     ClarityModule,
