@@ -1,0 +1,11 @@
+identifier: l8q9m8udm0l2a6te
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: my-blog
+homeFolder: /home/fabo/Documents/GitHub/angular-V16-projects/02_spa-blog
+distFolder: dist/my-blog
+outDir: /home/fabo/Documents/GitHub/angular-V16-projects/02_spa-blog/dist/static
+handle404: ''
+allowErrorCollect: false

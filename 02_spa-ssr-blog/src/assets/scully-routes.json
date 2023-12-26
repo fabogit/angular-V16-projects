@@ -1,0 +1,43 @@
+[
+  {
+    "route": "/contact"
+  },
+  {
+    "route": "/articles"
+  },
+  {
+    "route": "/posts/___UNPUBLISHED___lqmuo087_3PgdRgd9yK5BAChEPm3cAp2e1AMQWsWm",
+    "title": "2023-12-26-posts",
+    "description": "blog description",
+    "published": false,
+    "slugs": [
+      "___UNPUBLISHED___lqmuo087_3PgdRgd9yK5BAChEPm3cAp2e1AMQWsWm"
+    ],
+    "slug": "___UNPUBLISHED___lqmuo087_3PgdRgd9yK5BAChEPm3cAp2e1AMQWsWm",
+    "sourceFile": "2023-12-26-posts.md"
+  },
+  {
+    "route": "/posts/2023-12-27-posts",
+    "title": "2023-12-27-posts",
+    "description": "blog description",
+    "published": true,
+    "sourceFile": "2023-12-27-posts.md"
+  },
+  {
+    "route": "/posts/angular-and-scully",
+    "title": "Angular and Scully",
+    "description": "How to build a blog with Angular and Scully",
+    "published": true,
+    "sourceFile": "angular-and-scully.md"
+  },
+  {
+    "route": "/posts/build,-dist-and-scully",
+    "title": "Build, dist and scully",
+    "description": "summary",
+    "published": true,
+    "sourceFile": "build,-dist-and-scully.md"
+  },
+  {
+    "route": "/"
+  }
+]
