@@ -7,7 +7,7 @@ import { Issue } from './issue';
   providedIn: 'root',
 })
 export class IssuesService {
-  constructor() { }
+  constructor() {}
 
   // Empty or use mock data
   // private issues: Issue[] = [];
@@ -15,5 +15,10 @@ export class IssuesService {
 
   getPendingIssues(): Issue[] {
     return this.issues.filter((issue) => !issue.completed);
+  }
+
+  createIssue(issue: Issue) {
+    issue.issueNo = this.issues.length + 1;
+    this.issues.push(issue);
   }
 }
