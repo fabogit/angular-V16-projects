@@ -8,6 +8,7 @@ const routes: Routes = [
   // It creates a separate bundle for each lazy-loaded module, which is loaded upon request,
   //  reducing the final bundle size and the memory consumption of the application
   { path: 'articles', loadChildren: () => import('./articles/articles.module').then(m => m.ArticlesModule) },
+  { path: 'posts', loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule) },
   // redirect
   { path: '', pathMatch: 'full', redirectTo: 'articles' },
   // wildcard route

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +17,8 @@ import { ContactModule } from './contact/contact.module';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    ContactModule
+    ContactModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
