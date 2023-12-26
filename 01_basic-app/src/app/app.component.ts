@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '01_basic-app';
+  // value will be interpolated in the template file
+  title = 'Angular Projects';
 }
