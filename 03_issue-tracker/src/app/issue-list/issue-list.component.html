@@ -15,6 +15,7 @@
       <!-- Dropdown menu in each table row -->
       <clr-dg-action-overflow>
         <button class="action-item" (click)="selectedIssue = issue">Resolve</button>
+        <button class="action-item" (click)="editIssue = issue">Edit</button>
       </clr-dg-action-overflow>
       <clr-dg-cell>{{issue.issueNo}}</clr-dg-cell>
       <clr-dg-cell>{{issue.type}}</clr-dg-cell>
@@ -42,3 +43,9 @@
   [issueNo]="selectedIssue.issueNo"
   (confirm)="onConfirm($event)">
 </app-confirm-dialog>
+
+<app-issue-detail
+  *ngIf="editIssue"
+  [issue]="editIssue"
+  (formClose)="onCloseEdit()">
+</app-issue-detail>

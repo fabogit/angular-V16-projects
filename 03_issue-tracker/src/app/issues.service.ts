@@ -25,6 +25,17 @@ export class IssuesService {
     this.issues.push(issue);
   }
 
+  updateIssue(issueNo: number, issue: Issue) {
+    const existingIssue = this.issues.find(i => i.issueNo === issueNo);
+    if (existingIssue) {
+      const index = this.issues.indexOf(existingIssue);
+      this.issues[index] = {
+        ...existingIssue,
+        ...issue
+      };
+    }
+  }
+
   /**
    * Creates a clone of the issue we want to resolve and sets its completed property to the current date.
    * It then finds the initial issue in the issues array and replaces it with the cloned instance
