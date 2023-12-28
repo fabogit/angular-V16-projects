@@ -37,4 +37,15 @@ export class IssuesService {
     const index = this.issues.findIndex((i) => i === issue);
     this.issues[index] = selectedIssue;
   }
+
+  /**
+   * Takes the `title` of an `issue` as a parameter and searches for any `issues` that contain the same `title`.
+   * The search mechanism is triggered when the title parameter is more than three characters long to limit results to a reasonable amount
+   */
+  getSuggestions(title: string): Issue[] {
+    if (title.length > 3) {
+      return this.issues.filter((issue) => issue.title.indexOf(title) !== -1);
+    }
+    return [];
+  }
 }
