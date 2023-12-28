@@ -1,0 +1,27 @@
+<!--
+  Whether it is opened or closed, the current status of the dialog is indicated by
+  the clrModalOpen directive bound to the issueNo input property.
+  When that property is null, the dialog is closed.
+  The clrModalClosable directive indicates that the dialog cannot be closed by any means
+  other than programmatically through the issueNo property.
+-->
+<clr-modal [clrModalOpen]="issueNo !== null" [clrModalClosable]="false">
+  <!-- The dialog title that displays the current issue number -->
+  <h3 class="modal-title">
+    Resolve Issue #
+    {{ issueNo }}
+  </h3>
+  <!-- The main content of the dialog -->
+  <div class="modal-body">
+    <p>Are you sure you want to close the issue?</p>
+  </div>
+  <!-- The footer of the dialog, commonly used to add actions for that dialog -->
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="disagree()">
+      Cancel
+    </button>
+    <button type="button" class="btn btn-danger" (click)="agree()">
+      Yes, continue
+    </button>
+  </div>
+</clr-modal>

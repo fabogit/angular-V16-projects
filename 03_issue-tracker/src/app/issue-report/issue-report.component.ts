@@ -32,6 +32,7 @@ export class IssueReportComponent {
     // The user may only sometimes touch form controls to see the validation message.
     // So, we need to consider that upon form submission and act accordingly.
     // To overcome this case, we will mark all form controls as touched when the form is submitted
+    // Marking controls as touched makes validation messages appear automatically
     if (this.issueForm && this.issueForm.invalid) {
       this.issueForm.markAllAsTouched();
       return;

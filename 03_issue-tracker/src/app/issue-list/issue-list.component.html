@@ -4,12 +4,18 @@
   </button>
 
   <clr-datagrid>
+    <!-- Table columns -->
     <clr-dg-column [clrDgField]="'issueNo'" [clrDgColType]="'number'">Issue No</clr-dg-column>
     <clr-dg-column [clrDgField]="'type'">Type</clr-dg-column>
     <clr-dg-column [clrDgField]="'title'">Title</clr-dg-column>
     <clr-dg-column [clrDgField]="'description'">Description</clr-dg-column>
     <clr-dg-column [clrDgField]="'priority'">Priority</clr-dg-column>
+    <!-- Table rows -->
     <clr-dg-row *clrDgItems="let issue of issues">
+      <!-- Dropdown menu in each table row -->
+      <clr-dg-action-overflow>
+        <button class="action-item" (click)="selectedIssue = issue">Resolve</button>
+      </clr-dg-action-overflow>
       <clr-dg-cell>{{issue.issueNo}}</clr-dg-cell>
       <clr-dg-cell>{{issue.type}}</clr-dg-cell>
       <clr-dg-cell>{{issue.title}}</clr-dg-cell>
@@ -24,4 +30,15 @@
   </clr-datagrid>
 </ng-container>
 
-<app-issue-report *ngIf="showReportIssue === true" (formClose)="onCloseReport()"></app-issue-report>
+<!-- Add issue view -->
+<app-issue-report
+  *ngIf="showReportIssue === true"
+  (formClose)="onCloseReport()">
+</app-issue-report>
+
+<!-- Resolve modal -->
+<app-confirm-dialog
+  *ngIf="selectedIssue"
+  [issueNo]="selectedIssue.issueNo"
+  (confirm)="onConfirm($event)">
+</app-confirm-dialog>
