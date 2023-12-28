@@ -1,4 +1,4 @@
-:host {
+section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,4 +22,8 @@ mat-card {
 h1 {
     text-align: center;
     font-size: 2.5em;
+}
+
+mat-grid-list {
+    margin: 40px;
 }
