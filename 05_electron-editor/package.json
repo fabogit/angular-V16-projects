@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:desktop": "concurrently \"ng build --delete-output-path=false --watch\" \"webpack --config webpack.dev.config.js --watch\"",
-    "build:electron": "ng build && webpack --config webpack.prod.config.js"
+    "build:electron": "ng build && webpack --config webpack.prod.config.js",
+    "package": "electron-packager dist/my-editor --out=dist --asar"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,7 @@
     "@types/jasmine": "~4.3.0",
     "concurrently": "^8.2.2",
     "electron": "^24.3.1",
+    "electron-packager": "^17.1.2",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

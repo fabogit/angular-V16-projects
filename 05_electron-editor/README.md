@@ -18,6 +18,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `npm run start:desktop` to build bundle, then from `RUN AND DEBUG` start `Electron Main`
 
+## Build Electron source
+
+Run `npm run build:electron && npm run package` to build and bundle the app in `/dist/my-editor-{OS}` there will be an executable file to run
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
