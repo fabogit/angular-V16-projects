@@ -3,4 +3,8 @@
   The main component of the module is the <ngx-wig> component, which displays the actual WYSIWYG editor.
   It exposes a collection of input properties that we can set, such as the placeholder of the editor.
 -->
-<ngx-wig placeholder="Enter your content"></ngx-wig>
+<ngx-wig placeholder="Enter your content" [ngModel]="myContent" (contentChange)="saveContent($event)"></ngx-wig>
+<!--
+  We use the ngModel directive to bind the model of the editor to the myContent component property, which will be used to display the content initially.
+  We also use the contentChange event binding to save the content of the editor whenever it changes, that is, while the user types.
+-->
