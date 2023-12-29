@@ -4,6 +4,12 @@ function createWindow() {
 	const mainWindow = new BrowserWindow({
 		width: 800,
 		height: 600,
+		webPreferences: {
+			// Expose the ipcRenderer interface,
+			// which we will need to communicate with the main process
+			nodeIntegration: true,
+			contextIsolation: false
+		}
 	});
 	// The index.html file that we pass in loadFile is the main HTML file of the Angular application.
 	// It is loaded using the file protocol, which is why we removed the <base> tag
