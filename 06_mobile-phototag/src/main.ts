@@ -16,6 +16,7 @@ if (environment.production) {
 
 (window as Record<string, any>)['CESIUM_BASE_URL'] = '/assets/cesium/';
 
+// Use here your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: 'AIzaSyBIJe-YfnvUTexNQwjbLhsfHkaS239TeSs',
   authDomain: 'phototag-8f01d.firebaseapp.com',
