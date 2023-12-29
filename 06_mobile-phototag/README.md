@@ -81,4 +81,6 @@ UPDATE .gitignore (834 bytes)
 UPDATE src/main.ts (1204 bytes)
 ```
 
-- in `main.ts` replace <firebaseConfig> `importProvidersFrom(provideFirebaseApp(() => initializeApp(<firebaseConfig>)))` with the Firebase configuration object that you copied in the previously
+- in `main.ts` update the `firebaseConfig` with the Firebase configuration object that you copied previously
+
+- Open the Firebase console of your application and select the `Storage` option in the `Build` section. Click on the Get started button, select the `Start in Test mode` option, and click Next. Finally, click Done to complete the process of setting up cloud storage
