@@ -1,0 +1,33 @@
+<!--
+  We wrap the main content of the component inside the <app-panel> component and set the caption and icon properties for the header.
+  Our component iterates over the repos$ observable and displays the name and the description of each repository.
+  The name is an anchor element that points to the actual GitHub URL of the repository.
+-->
+<app-panel caption="Repositories" icon="archive">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col p-2" *ngFor="let repo of repos$ | async">
+      <div class="card h-100">
+        <div class="card-body">
+          <ul class="list-group list-group-flush list-group-horizontal">
+            <li class="list-group-item border-0">
+              <i class="bi-code me-2"></i>
+              {{repo.language}}
+            </li>
+            <li class="list-group-item border-0">
+              <i class="bi-star me-2"></i>
+              {{repo.stargazers_count}}
+            </li>
+            <li class="list-group-item border-0">
+              <i class="bi-diagram-2 me-2"></i>
+              {{repo.forks_count}}
+            </li>
+          </ul>
+          <h5 class="card-title">
+            <a [href]="repo.html_url">{{repo.name}}</a>
+          </h5>
+          <p class="card-text">{{repo.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-panel>

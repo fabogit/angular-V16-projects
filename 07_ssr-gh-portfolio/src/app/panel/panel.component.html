@@ -1,0 +1,12 @@
+<!-- The panel component is a Bootstrap card element that consists of a header and a body. -->
+<div class="card mb-4">
+  <!--The header uses the caption and icon input properties to display text with an icon. -->
+  <div class="card-header">
+    <i class="bi bi-{{icon}} me-1"></i>
+    {{caption}}
+  </div>
+  <!-- The body uses the <ng-content> Angular component to define a placeholder where the content from our features will be displayed. -->
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+</div>

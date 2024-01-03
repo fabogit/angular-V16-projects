@@ -4,11 +4,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { PanelComponent } from './panel/panel.component';
+import { RepositoriesComponent } from './repositories/repositories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonalInfoComponent
+    PersonalInfoComponent,
+    PanelComponent,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
