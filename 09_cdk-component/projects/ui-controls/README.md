@@ -5,7 +5,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 ## Code scaffolding
 
 Run `ng generate component component-name --project ui-controls` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ui-controls`.
-> Note: Don't forget to add `--project ui-controls` or else it will be added to the default project in your `angular.json` file. 
+> Note: Don't forget to add `--project ui-controls` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
@@ -13,7 +13,7 @@ Run `ng build ui-controls` to build the project. The build artifacts will be sto
 
 ## Publishing
 
-After building your library with `ng build ui-controls`, go to the dist folder `cd dist/ui-controls` and run `npm publish`.
+After building your library with `ng build ui-controls`, go to the dist folder `cd dist/ui-controls` and run `npm login` if needed then `npm publish`.
 
 ## Running unit tests
 
