@@ -17,7 +17,10 @@ export function crudService(_options: any): Rule {
       move(normalize(_options.path ?? normalize('src/app/')))
     ]);
     return chain([
+      // We use the externalSchematic method to call the built-in generation schematic for creating Angular services.
+      // Then, we merge the result from executing that schematic with our templateSource variable.
       externalSchematic('@schematics/angular', 'service', _options),
+      // We also define the strategy of the merge operation using MergeStrategy.Overwrite so that any changes made by our schematic will overwrite the default ones.
       mergeWith(templateSource, MergeStrategy.Overwrite)
     ]);
   };

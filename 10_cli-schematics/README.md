@@ -48,6 +48,10 @@ The `npm link` command is like running `npm install my-schematics`, except that 
 
 `ng generate my-schematics:tailwind-container --name=dashboard`
 
-we use our custom schematic by passing the name of our collection, `my-schematics`, followed by the specific schematic name, `tailwind-container`, separated by a colon. We also pass a name for our component using the `--name` option of the schematic.
+We use our custom schematic by passing the name of our collection, `my-schematics`, followed by the specific schematic name, `tailwind-container`, separated by a colon. We also pass a name for our component using the `--name` option of the schematic.
+
+Also to generate an Angular service using our schematic:
 
 `ng generate my-schematics:crud-service --name=customers`
+
+#### ** We do not need to link the schematics library again. Our application will be automatically updated as soon as we make a new build of our schematics. **
