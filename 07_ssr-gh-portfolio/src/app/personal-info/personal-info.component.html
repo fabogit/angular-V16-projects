@@ -1,0 +1,25 @@
+<!--
+  We use the async pipe because the user$ property is an observable, and we need to subscribe to it to get its values.
+  The main advantage of the async pipe is that it unsubscribes from the observable automatically when a component is destroyed, avoiding potential memory leaks.
+  We also create the user alias for the observable to reference it easily in various locations around the component template.
+-->
+<div class="card" *ngIf="user$ | async as user">
+  <img [src]="user.avatar_url" class="card-img-top" alt="{{user.name}} photo">
+  <div class="card-body">
+    <h5 class="card-title">{{user.name}}</h5>
+    <p class="card-text">{{user.bio}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" title="Location">
+      <i class="bi-geo me-2"></i>{{user.location}}
+    </li>
+    <li class="list-group-item" title="Followers">
+      <i class="bi-people me-2"></i>{{user.followers}}
+    </li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.twitter.com/{{user.twitter_username}}" class="card-link">Twitter</a>
+    <!-- Not interpolated, depending on user.blog this link might not work -->
+    <a [href]="user.blog" class="card-link">Personal blog</a>
+  </div>
+</div>
