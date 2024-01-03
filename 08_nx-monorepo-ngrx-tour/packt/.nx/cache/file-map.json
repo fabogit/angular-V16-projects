@@ -1,0 +1,596 @@
+{
+  "version": "6.0",
+  "nxVersion": "16.3.2",
+  "deps": {
+    "@angular/animations": "~16.0.0",
+    "@angular/cdk": "^16.0.3",
+    "@angular/common": "~16.0.0",
+    "@angular/compiler": "~16.0.0",
+    "@angular/core": "~16.0.0",
+    "@angular/forms": "~16.0.0",
+    "@angular/google-maps": "^16.0.3",
+    "@angular/material": "^16.0.3",
+    "@angular/platform-browser": "~16.0.0",
+    "@angular/platform-browser-dynamic": "~16.0.0",
+    "@angular/router": "~16.0.0",
+    "@ngrx/component-store": "~16.0.0",
+    "@ngrx/effects": "~16.0.0",
+    "@ngrx/entity": "~16.0.0",
+    "@ngrx/router-store": "~16.0.0",
+    "@ngrx/store": "~16.0.0",
+    "@nx/angular": "16.3.2",
+    "chart.js": "^4.3.0",
+    "ng2-charts": "^4.1.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0",
+    "@angular-devkit/build-angular": "~16.0.0",
+    "@angular-devkit/core": "~16.0.0",
+    "@angular-devkit/schematics": "~16.0.0",
+    "@angular-eslint/eslint-plugin": "~16.0.0",
+    "@angular-eslint/eslint-plugin-template": "~16.0.0",
+    "@angular-eslint/template-parser": "~16.0.0",
+    "@angular/cli": "~16.0.0",
+    "@angular/compiler-cli": "~16.0.0",
+    "@angular/language-service": "~16.0.0",
+    "@ngrx/schematics": "~16.0.0",
+    "@ngrx/store-devtools": "~16.0.0",
+    "@nx/cypress": "16.3.2",
+    "@nx/eslint-plugin": "16.3.2",
+    "@nx/jest": "16.3.2",
+    "@nx/js": "16.3.2",
+    "@nx/linter": "16.3.2",
+    "@nx/web": "16.3.2",
+    "@nx/workspace": "16.3.2",
+    "@schematics/angular": "~16.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "cypress": "^12.11.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "jasmine-marbles": "~0.9.1",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-preset-angular": "~13.1.0",
+    "nx": "16.3.2",
+    "prettier": "^2.6.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.0.2"
+  },
+  "pathMappings": {
+    "@packt/admin": [
+      "libs/admin/src/index.ts"
+    ],
+    "@packt/poi": [
+      "libs/poi/src/index.ts"
+    ],
+    "@packt/visitor": [
+      "libs/visitor/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "projectFileMap": {
+    "tour": [
+      {
+        "file": "apps/tour/.eslintrc.json",
+        "hash": "8710969948474036582"
+      },
+      {
+        "file": "apps/tour/jest.config.ts",
+        "hash": "950775271038493407"
+      },
+      {
+        "file": "apps/tour/project.json",
+        "hash": "16983737866123124248"
+      },
+      {
+        "file": "apps/tour/src/app/app.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/tour/src/app/app.component.html",
+        "hash": "17816966185630879015"
+      },
+      {
+        "file": "apps/tour/src/app/app.component.spec.ts",
+        "hash": "14041394327911565559",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "apps/tour/src/app/app.component.ts",
+        "hash": "2685618460999913512",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "apps/tour/src/app/app.config.ts",
+        "hash": "9588915743478010319",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router",
+          "npm:@angular/platform-browser"
+        ]
+      },
+      {
+        "file": "apps/tour/src/app/app.module.ts",
+        "hash": "6719690003000902932",
+        "deps": [
+          "npm:@angular/common",
+          "npm:@angular/core",
+          "npm:@angular/platform-browser",
+          "npm:@angular/router",
+          "npm:@ngrx/store",
+          "npm:@ngrx/effects",
+          "npm:@ngrx/router-store"
+        ]
+      },
+      {
+        "file": "apps/tour/src/app/app.routes.ts",
+        "hash": "16808521475394596912",
+        "deps": [
+          "npm:@angular/router",
+          [
+            "admin",
+            "dynamic"
+          ],
+          [
+            "visitor",
+            "dynamic"
+          ]
+        ]
+      },
+      {
+        "file": "apps/tour/src/app/nx-welcome.component.ts",
+        "hash": "17097717417049180729",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "apps/tour/src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/tour/src/assets/poi.json",
+        "hash": "16909724509951426265"
+      },
+      {
+        "file": "apps/tour/src/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/tour/src/index.html",
+        "hash": "10852786829216394523"
+      },
+      {
+        "file": "apps/tour/src/main.ts",
+        "hash": "14191774545949582757",
+        "deps": [
+          "npm:@angular/platform-browser-dynamic"
+        ]
+      },
+      {
+        "file": "apps/tour/src/styles.css",
+        "hash": "9525514396149276363"
+      },
+      {
+        "file": "apps/tour/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "apps/tour/tsconfig.app.json",
+        "hash": "8365644956319658761"
+      },
+      {
+        "file": "apps/tour/tsconfig.editor.json",
+        "hash": "17511610827034788226"
+      },
+      {
+        "file": "apps/tour/tsconfig.json",
+        "hash": "12094030803572703611"
+      },
+      {
+        "file": "apps/tour/tsconfig.spec.json",
+        "hash": "2927375835638640771"
+      }
+    ],
+    "tour-e2e": [
+      {
+        "file": "apps/tour-e2e/.eslintrc.json",
+        "hash": "14060216369337943343"
+      },
+      {
+        "file": "apps/tour-e2e/cypress.config.ts",
+        "hash": "15414076024138857470",
+        "deps": [
+          "npm:cypress",
+          "npm:@nx/cypress"
+        ]
+      },
+      {
+        "file": "apps/tour-e2e/project.json",
+        "hash": "3674079303959607972"
+      },
+      {
+        "file": "apps/tour-e2e/src/e2e/app.cy.ts",
+        "hash": "16193836853265737305"
+      },
+      {
+        "file": "apps/tour-e2e/src/fixtures/example.json",
+        "hash": "11614668686582597233"
+      },
+      {
+        "file": "apps/tour-e2e/src/support/app.po.ts",
+        "hash": "11157016311132186162"
+      },
+      {
+        "file": "apps/tour-e2e/src/support/commands.ts",
+        "hash": "7314691991044890572"
+      },
+      {
+        "file": "apps/tour-e2e/src/support/e2e.ts",
+        "hash": "3666078656922506009"
+      },
+      {
+        "file": "apps/tour-e2e/tsconfig.json",
+        "hash": "15439127571515986436"
+      }
+    ],
+    "admin": [
+      {
+        "file": "libs/admin/.eslintrc.json",
+        "hash": "8710969948474036582"
+      },
+      {
+        "file": "libs/admin/jest.config.ts",
+        "hash": "7152816281463156800"
+      },
+      {
+        "file": "libs/admin/project.json",
+        "hash": "10842456166310812127"
+      },
+      {
+        "file": "libs/admin/README.md",
+        "hash": "11443056632732460715"
+      },
+      {
+        "file": "libs/admin/src/index.ts",
+        "hash": "16152910092619203184"
+      },
+      {
+        "file": "libs/admin/src/lib/admin.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/admin/src/lib/admin.component.html",
+        "hash": "1841336466997990172"
+      },
+      {
+        "file": "libs/admin/src/lib/admin.component.spec.ts",
+        "hash": "9734149707744025995",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/admin/src/lib/admin.component.ts",
+        "hash": "345678811299408532",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ngrx/store",
+          "poi",
+          "npm:rxjs",
+          "npm:chart.js"
+        ]
+      },
+      {
+        "file": "libs/admin/src/lib/admin.module.ts",
+        "hash": "12730675173053024170",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@angular/router",
+          "poi",
+          "npm:ng2-charts"
+        ]
+      },
+      {
+        "file": "libs/admin/src/lib/admin.service.spec.ts",
+        "hash": "1422403369409392991",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/admin/src/lib/admin.service.ts",
+        "hash": "14243153028545771142",
+        "deps": [
+          "npm:@angular/core",
+          "poi"
+        ]
+      },
+      {
+        "file": "libs/admin/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/admin/tsconfig.json",
+        "hash": "15487755565970508470"
+      },
+      {
+        "file": "libs/admin/tsconfig.lib.json",
+        "hash": "5796668385415907511"
+      },
+      {
+        "file": "libs/admin/tsconfig.spec.json",
+        "hash": "2927375835638640771"
+      }
+    ],
+    "poi": [
+      {
+        "file": "libs/poi/.eslintrc.json",
+        "hash": "8710969948474036582"
+      },
+      {
+        "file": "libs/poi/jest.config.ts",
+        "hash": "16241512429493644441"
+      },
+      {
+        "file": "libs/poi/project.json",
+        "hash": "10921845356684419739"
+      },
+      {
+        "file": "libs/poi/README.md",
+        "hash": "3735539962299309311"
+      },
+      {
+        "file": "libs/poi/src/index.ts",
+        "hash": "3870992913514493956"
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.actions.ts",
+        "hash": "3585050358892836840",
+        "deps": [
+          "npm:@ngrx/store"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.effects.spec.ts",
+        "hash": "1064683194881945716",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ngrx/effects",
+          "npm:@ngrx/store",
+          "npm:jasmine-marbles",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.effects.ts",
+        "hash": "828509249068237352",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ngrx/effects",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.models.ts",
+        "hash": "11979034749514707598"
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.reducer.spec.ts",
+        "hash": "2213595563683824255",
+        "deps": [
+          "npm:@ngrx/store"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.reducer.ts",
+        "hash": "16178056972563915239",
+        "deps": [
+          "npm:@ngrx/entity",
+          "npm:@ngrx/store"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.selectors.spec.ts",
+        "hash": "5339704852229789816"
+      },
+      {
+        "file": "libs/poi/src/lib/+state/poi.selectors.ts",
+        "hash": "17934657944565092724",
+        "deps": [
+          "npm:@ngrx/store"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/poi.module.ts",
+        "hash": "3319893176556942564",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@ngrx/store",
+          "npm:@ngrx/effects"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/poi.service.spec.ts",
+        "hash": "7475752178917411603",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/poi/src/lib/poi.service.ts",
+        "hash": "2085943312581932383",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/poi/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/poi/tsconfig.json",
+        "hash": "15487755565970508470"
+      },
+      {
+        "file": "libs/poi/tsconfig.lib.json",
+        "hash": "5796668385415907511"
+      },
+      {
+        "file": "libs/poi/tsconfig.spec.json",
+        "hash": "2927375835638640771"
+      }
+    ],
+    "visitor": [
+      {
+        "file": "libs/visitor/.eslintrc.json",
+        "hash": "8710969948474036582"
+      },
+      {
+        "file": "libs/visitor/jest.config.ts",
+        "hash": "5262293070513394998"
+      },
+      {
+        "file": "libs/visitor/project.json",
+        "hash": "9906603995744628453"
+      },
+      {
+        "file": "libs/visitor/README.md",
+        "hash": "12783832681850170722"
+      },
+      {
+        "file": "libs/visitor/src/index.ts",
+        "hash": "5844871538299029859"
+      },
+      {
+        "file": "libs/visitor/src/lib/map/map.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/visitor/src/lib/map/map.component.html",
+        "hash": "2190853940269425415"
+      },
+      {
+        "file": "libs/visitor/src/lib/map/map.component.spec.ts",
+        "hash": "2197359597741089050",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/lib/map/map.component.ts",
+        "hash": "387397416972850411",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ngrx/store",
+          "poi",
+          "npm:@angular/google-maps"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/lib/poi-list/poi-list.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/visitor/src/lib/poi-list/poi-list.component.html",
+        "hash": "5474454638343875657"
+      },
+      {
+        "file": "libs/visitor/src/lib/poi-list/poi-list.component.spec.ts",
+        "hash": "12839731774201634168",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/lib/poi-list/poi-list.component.ts",
+        "hash": "6648913279890844802",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ngrx/store",
+          "poi"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/lib/visitor.component.css",
+        "hash": "14798987541612026183"
+      },
+      {
+        "file": "libs/visitor/src/lib/visitor.component.html",
+        "hash": "6181816551975911510"
+      },
+      {
+        "file": "libs/visitor/src/lib/visitor.component.spec.ts",
+        "hash": "8943889543896920466",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/platform-browser",
+          "npm:@angular/material"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/lib/visitor.component.ts",
+        "hash": "10677870635249343088",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/cdk",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/lib/visitor.module.ts",
+        "hash": "5436459008428133431",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@angular/material",
+          "npm:@angular/router",
+          "poi",
+          "npm:@angular/google-maps"
+        ]
+      },
+      {
+        "file": "libs/visitor/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/visitor/tsconfig.json",
+        "hash": "15487755565970508470"
+      },
+      {
+        "file": "libs/visitor/tsconfig.lib.json",
+        "hash": "5796668385415907511"
+      },
+      {
+        "file": "libs/visitor/tsconfig.spec.json",
+        "hash": "2927375835638640771"
+      }
+    ]
+  }
+}

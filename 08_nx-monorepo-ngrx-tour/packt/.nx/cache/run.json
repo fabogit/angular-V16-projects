@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run tour:lint",
+    "startTime": "2024-01-03T14:31:17.382Z",
+    "endTime": "2024-01-03T14:31:21.133Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "tour:lint",
+      "target": "lint",
+      "projectName": "tour",
+      "hash": "5713380439422302719",
+      "startTime": "2024-01-03T14:31:17.411Z",
+      "endTime": "2024-01-03T14:31:21.132Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

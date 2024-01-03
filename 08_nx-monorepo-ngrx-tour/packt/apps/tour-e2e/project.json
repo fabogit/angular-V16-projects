@@ -1,15 +1,15 @@
 {
   "name": "tour-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
   "sourceRoot": "apps/tour-e2e/src",
+  "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
         "cypressConfig": "apps/tour-e2e/cypress.config.ts",
-        "testingType": "e2e",
-        "devServerTarget": "tour:serve:development"
+        "devServerTarget": "tour:serve:development",
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {
@@ -21,8 +21,11 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tour-e2e/**/*.{js,ts}"]
+      }
     }
   },
   "tags": [],
