@@ -1,4 +1,5 @@
 <div class="container is-fluid">
   <h1 class="title">Assassins Creed Series</h1>
-  <lib-card-list [cards]="cards"></lib-card-list>
+  <!-- event binding to the cardChange event of the <lib-card-list> component -->
+  <lib-card-list [cards]="cards" (cardChange)="onCardChange($event)"></lib-card-list>
 </div>

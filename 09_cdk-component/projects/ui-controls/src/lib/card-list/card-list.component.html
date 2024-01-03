@@ -1,5 +1,12 @@
-<div>
-  <div class="card m-4" *ngFor="let card of cards">
+<!--
+  We add the cdkDropList directive to the container element to mark it as a drop list.
+  A drop list in the Angular CDK indicates that its contents can be re-ordered using drag-and-drop actions.
+  We set the drag-and-drop orientation to horizontal because our card list is rendered in a single row,
+  and we also bind a sortCards component method to the cdkDropListDropped event of the drop list.
+-->
+<div cdkDropListOrientation="horizontal" cdkDropList (cdkDropListDropped)="sortCards($event)">
+  <!-- We add the cdkDrag directive to each card element to be able to move it by dragging it -->
+  <div cdkDrag class="card m-4" *ngFor="let card of cards">
     <header class="card-header">
       <p class="card-header-title">{{card.title}}</p>
     </header>
