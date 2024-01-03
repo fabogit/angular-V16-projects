@@ -2,4 +2,16 @@
   <h1 class="title">Assassins Creed Series</h1>
   <!-- event binding to the cardChange event of the <lib-card-list> component -->
   <lib-card-list [cards]="cards" (cardChange)="onCardChange($event)"></lib-card-list>
+  <h1 class="title mt-5">Clipboard interaction</h1>
+  <div class="field has-addons">
+    <div class="control">
+      <!-- We bind the title property of the component to the <input> element using the ngModel directive. -->
+      <input class="input" type="text" [(ngModel)]="title">
+    </div>
+    <div class="control">
+      <!-- We also bind it to the data property of the <lib-copy-button> component to copy the contents of the <input> element to the clipboard. -->
+      <!-- We also bind the copied event to the log component method. -->
+      <lib-copy-button [data]="title" (copied)="log()"></lib-copy-button>
+    </div>
+  </div>
 </div>

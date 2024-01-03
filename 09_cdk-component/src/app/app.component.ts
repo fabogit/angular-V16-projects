@@ -18,4 +18,11 @@ export class AppComponent {
   onCardChange(cards: Card[]) {
     console.log(cards);
   }
+
+  /**
+   * Displaying an information message when data is copied to the clipboard
+   */
+  log() {
+    alert(`${this.title} copied to clipboard`);
+  }
 }

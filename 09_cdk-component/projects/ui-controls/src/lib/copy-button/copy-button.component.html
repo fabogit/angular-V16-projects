@@ -1,0 +1,7 @@
+<!--
+  The cdkCopyToClipboard property binding indicates that the data component property will be copied to the clipboard when the button is clicked.
+  The cdkCopyToClipboardCopied event binding will call the onCopy component method as soon as data has been copied to the clipboard successfully.
+-->
+<button class="button is-light is-primary" [cdkCopyToClipboard]="data" (cdkCopyToClipboardCopied)="onCopy()">
+  Copy
+</button>
