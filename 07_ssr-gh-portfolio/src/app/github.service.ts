@@ -4,11 +4,13 @@ import { Observable } from 'rxjs';
 
 import { User } from './user';
 import { Repository } from './repository';
+import { Organization } from './organization';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GithubService {
+  // any github profile, in this case its Theo :D
   readonly username = 't3dotgg';
   private apiUrl = 'https://api.github.com';
   private userUrl = `https://api.github.com/users/${this.username}`;
@@ -27,5 +29,12 @@ export class GithubService {
    */
   getRepos(): Observable<Repository[]> {
     return this.http.get<Repository[]>(`${this.userUrl}/repos`);
+  }
+
+  /**
+   * Get organizations of the current GitHub user `username`
+   */
+  getOrganizations(): Observable<Organization[]> {
+    return this.http.get<Organization[]>(`${this.userUrl}/orgs`);
   }
 }

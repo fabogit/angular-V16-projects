@@ -11,6 +11,7 @@ import { Repository } from '../repository';
 })
 export class RepositoriesComponent implements OnInit {
   repos$: Observable<Repository[]> | undefined;
+
   constructor(private githubService: GithubService) { }
   ngOnInit(): void {
     // We use the pipe RxJS operator to combine the observable returned from the getRepos method with the map operator to filter out fork repositories and get only sources.
